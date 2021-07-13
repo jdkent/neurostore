@@ -66,7 +66,7 @@ class Client(object):
             self.password = password
 
         rv = self.post(
-            '/api/login',
+            '/api/users/login/',
             data={'email': self.email, 'password': self.password})
 
         if self.client_flask:

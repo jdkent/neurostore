@@ -5,9 +5,9 @@ def test_create_user(auth_client):
         'username': 'user',
         'password': 'more than six characters'
     }
-    auth_client.post("/api/register", data=new_user)
+    auth_client.post("/api/users/register/", data=new_user)
     login_resp = auth_client.post(
-        "/api/login",
+        "/api/users/login/",
         data={
             'email': new_user['email'],
             'password': new_user['password'],

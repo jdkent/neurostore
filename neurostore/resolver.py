@@ -54,8 +54,7 @@ class MethodListViewResolver(MethodViewResolver):
         operation_id = self.resolve_operation_id_using_rest_semantics(operation)
         module_name, view_base, meth_name = operation_id.rsplit(".", 2)
         if (
-              re.search(r"\{.*\}$", operation.path)
-              or operation.path in ['/login', '/register']
+              re.search(r"\{.*\}$", operation.path) or 'users' in operation.path
         ):
             view_suffix = "View"
         else:
