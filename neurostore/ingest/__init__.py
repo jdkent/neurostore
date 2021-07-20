@@ -11,7 +11,7 @@ import pandas as pd
 import requests
 
 from neurostore.models import Study, Analysis, Image, User, Point, Condition, AnalysisConditions
-from neurostore.core import db
+from neurostore.store import db
 
 
 def ingest_neurovault(verbose=False, limit=20):

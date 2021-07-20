@@ -1,7 +1,7 @@
 import pytest
 from os import environ
 from flask_security.utils import encrypt_password
-from ..core import app as _app
+from ..store import app as _app
 from ..database import db as _db
 import datetime
 import sqlalchemy as sa

@@ -12,7 +12,7 @@ from flask_dance.contrib.twitter import make_twitter_blueprint
 from flask_dance.contrib.google import make_google_blueprint
 from sqlalchemy.orm.exc import NoResultFound
 
-from .core import db
+from .store import db
 from .models import OAuth, User
 
 

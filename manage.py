@@ -7,7 +7,7 @@ from flask_script import Manager, Shell
 from flask_migrate import Migrate, MigrateCommand
 from flask_security.utils import encrypt_password
 
-from neurostore.core import app, db, user_datastore
+from neurostore.store import app, db, user_datastore
 from neurostore import ingest
 from neurostore import models
 

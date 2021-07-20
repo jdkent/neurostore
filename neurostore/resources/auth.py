@@ -9,7 +9,7 @@ from webargs.flaskparser import parser
 from ..models.auth import User  # , user_datastore
 from ..schemas import UserSchema # noqa E401
 from ..database import db
-from ..core import jwt
+from ..store import jwt
 
 
 # Register a callback function that takes whatever object is passed in as the

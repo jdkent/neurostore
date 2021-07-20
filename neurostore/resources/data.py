@@ -10,7 +10,7 @@ from webargs.flaskparser import parser
 from webargs import fields
 from flask_jwt_extended import jwt_required, current_user  # jwt_required
 
-from ..core import db
+from ..store import db
 from ..models import Dataset, Study, Analysis, Condition, Image, Point, PointValue, AnalysisConditions  # noqa E401
 
 from ..schemas import (  # noqa E401
